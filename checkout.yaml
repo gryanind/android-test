@@ -1,6 +1,6 @@
 appId: evermos.evermos.com.evermos.stag
 ---
-- runFlow: add-to-cart.yaml #run commands from login.yaml
+- runFlow: add-to-cart.yaml #run commands from add-to-cart.yaml
 - tapOn: "Lanjut ke Checkout"
 - assertVisible:
     text: "Checkout"
