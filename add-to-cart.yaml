@@ -1,0 +1,22 @@
+appId: evermos.evermos.com.evermos.stag
+---
+- runFlow: login.yaml #run commands from login.yaml
+- scroll
+- tapOn: "Daftar Produk"
+- assertVisible:
+    text: "Daftar Produk"
+- scroll
+- scroll
+- tapOn:
+    point: 100, 600
+- assertVisible:
+    text: "Subs Ongkir IntheBox - Kasur Hybrid Ukuran 180x200 (King) 32 x 32 x 208 Cm Biru"
+- tapOn: "Pesan Sekarang"
+- assertVisible:
+    text: "Pilih Varian Produk"
+- tapOn: "Masukkan ke Keranjang"
+- assertVisible:
+    text: "Detail Pengiriman"
+- tapOn: "Lanjutkan"
+- assertVisible:
+    text: "Keranjang"

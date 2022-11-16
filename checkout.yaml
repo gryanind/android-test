@@ -1,0 +1,13 @@
+appId: evermos.evermos.com.evermos.stag
+---
+- runFlow: add-to-cart.yaml #run commands from login.yaml
+- tapOn: "Lanjut ke Checkout"
+- assertVisible:
+    text: "Checkout"
+- tapOn: "Lanjutkan ke Pembayaran"
+- assertVisible:
+    text: "Bayar"
+- tapOn: "Bayar"
+- assertVisible:
+    text: "Pilih Metode Pembayaran"
+- tapOn: "Danamon Online"

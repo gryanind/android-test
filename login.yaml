@@ -1,0 +1,17 @@
+appId: evermos.evermos.com.evermos.stag
+---
+- launchApp:
+    clearState: true
+- tapOn: "Izinkan"
+#- assertVisible:
+    #text: "Assalamualaikum, Selamat datang di"
+- tapOn: "Selanjutnya"
+- tapOn: "Masuk dengan kata sandi"
+- tapOn: "Contoh: 87722200714"
+- inputText: "696969000"
+- tapOn: "Ketik kata sandi"
+- inputText: "123123123"
+- hideKeyboard
+- tapOn: "Masuk"
+- assertVisible:
+    text: "Ada yang baru di Evermos!"
