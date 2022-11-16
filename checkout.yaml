@@ -11,3 +11,12 @@ appId: evermos.evermos.com.evermos.stag
 - assertVisible:
     text: "Pilih Metode Pembayaran"
 - tapOn: "Danamon Online"
+- tapOn: "Pay now"
+- assertVisible:
+    text: "Danamon Online"
+- tapOn: "Pay"
+- assertVisible:
+    text: "Payment Success"
+- tapOn: "Back to merchant website"
+- assertVisible:
+    text: "Alhamdulillah, Pembayaran Berhasil!"
